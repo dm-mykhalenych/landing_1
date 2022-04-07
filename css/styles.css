@@ -1,0 +1,542 @@
+/*
+* Colors used in design.
+*   primary: #0078aa;
+*   dark: #363636;
+*   light: #fff;
+*/
+
+html,
+body {
+  font-family: 'Montserrat',
+    sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: #ffffff;
+  color: #363636;
+  font-size: 18px;
+}
+
+.header {
+  height: 100px;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 999;
+}
+
+.header-menu-list {
+  display: flex;
+}
+
+.header-menu-list__item {
+  list-style-type: none;
+  padding: 0 10px;
+}
+
+.header-menu-item__link {
+  text-decoration: none;
+  color: #363636;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header-menu-item__link:hover {
+  color: #0078aa;
+  transition: 1s;
+}
+
+.section-header {
+  background: no-repeat url(../img/header_bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.section-header-content {
+  max-width: 600px;
+  padding: 8% 10%;
+}
+
+.section-header-title {
+  font-size: 2.5em;
+}
+
+.section-header-paragraph {
+  font-size: 19px;
+  color: #99999f;
+}
+
+.section-header-icons-box {
+  display: flex;
+  gap: 20px;
+}
+
+.section-header-icon {
+  height: 31px;
+  width: 55px;
+  padding: 16px 4px;
+  margin-top: 2%;
+  background: #0078aa;
+  border: 1px solid transparent;
+  fill: #ffffff;
+  border-radius: 50%;
+}
+
+.section-header-icon:hover {
+  background: #ffffff;
+  border: 1px solid #0078aa;
+  fill: #0078aa;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.section-about {
+  display: flex;
+  align-items: center;
+}
+
+.section-about-image {
+  width: 50%;
+  padding: 2% 0;
+}
+
+.image-about {
+  width: 100%;
+}
+
+.section-about-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  padding: 2%;
+  line-height: 22px;
+}
+
+.section-about-title,
+.section-about-second-title,
+.section-about-content p {
+  margin: 10px 0;
+}
+
+.section-about-title {
+  font-size: 2.5em;
+}
+
+.section-about-second-title {
+  margin-bottom: 0;
+}
+
+.section-about-paragraph {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #0078aa;
+}
+
+.section-about-second-paragraph {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.section-about-second-title::before {
+  content: "\27F9";
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  top: 1px;
+  font-size: 16px;
+  color: #0078aa;
+}
+
+.section-our-service {
+  background: no-repeat url(../img/services_bg.jpg);
+  width: 100%;
+  background-size: cover;
+  padding: 3% 0;
+  text-align: center;
+}
+
+.section-our-service-title {
+  font-size: 2.3em;
+  margin: 0;
+}
+
+.section-our-service-paragraph {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.section-service-boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.our-service-box {
+  padding: 5%;
+  background: #ffffff;
+}
+
+.section-special-offers {
+  background: no-repeat url(../img/pricing_bg.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  text-align: center;
+}
+
+.special-offers-title {
+  font-size: 2.2em;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.special-offers-paragraph {
+  padding-bottom: 6%;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-offers-columns {
+  display: grid;
+  grid-template-columns: 34% 32% 34%;
+  width: 76%;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.special-offer-column {
+  height: 75vh;
+  padding: 9%;
+  background: #47c9e5;
+}
+
+.offer-column-center {
+  margin-top: -7%;
+  padding-top: 18%;
+  height: 77vh;
+  border: 2px solid #47c9e5;
+  background: #ffffff;
+  color: #0078aa;
+}
+
+.special-offer-column-title {
+  font-size: 1.6em;
+}
+
+.special-offer-price {
+  font-size: 3.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.special-offer-treatments {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.offer-column-icon {
+  height: 20px;
+  width: 20px;
+  fill: #ffffff;
+}
+
+.offer-icon-center {
+  fill: #0078aa;
+}
+
+.special-offer-column p {
+  margin: 30px 0;
+}
+
+.special-offer-link {
+  position: relative;
+  padding: 15px 30px;
+  background: #ffffff;
+  border: 2px solid #0078aa;
+  border-radius: 14px;
+  font-weight: bold;
+  color: #0078aa;
+  text-decoration: none;
+  top: 25px;
+}
+
+.section-contact-us-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.contact-us-form-title {
+  font-size: 2em;
+  margin: 0;
+}
+
+.contact-us-form-paragraph {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.section-contact-us-image {
+  width: 55%;
+}
+
+.section-contact-us-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-contact-us-form {
+  width: 42%;
+  padding: 5% 0;
+  margin-left: 2%;
+}
+
+.form-control {
+  width: 98%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 30px 0 10px 5px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#contact_email {
+  border: none;
+}
+
+.form-control:focus {
+  font-size: 19px;
+  outline: #e5e5e5;
+}
+
+.form-btn {
+  margin-top: 3%;
+  padding: 15px 30px;
+  background: #0078aa;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.form-btn:hover {
+  border: 2px solid #0078aa;
+  background: #ffffff;
+  color: #0078aa;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  background-color: #363636;
+  color: #ffffff;
+}
+
+.up-btn {
+  position: fixed;
+  pointer-events: all;
+  top: 90vh;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #0078aa;
+  transition: transform 80ms ease-in;
+}
+
+.up-btn:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1279px) {
+  .header-menu {
+    justify-content: space-between;
+  }
+
+  .logo-link {
+    padding-left: 20px;
+  }
+
+  .header-menu-list__item:last-child {
+    padding-right: 20px;
+  }
+
+  .section-header-content {
+    max-width: 550px;
+    padding: 8% 8%;
+  }
+
+  .section-header-paragraph {
+    font-size: 17px;
+  }
+
+  .section-header-icon {
+    height: 26px;
+    width: 49px;
+    padding: 14px 2px;
+  }
+
+  .section-about {
+    margin: 4%;
+  }
+
+  .section-about-content {
+    max-width: 350px;
+  }
+
+  .section-about-title {
+    font-size: 2em;
+  }
+
+  .section-about-paragraph {
+    font-size: .9em;
+  }
+
+  .section-about-second-paragraph {
+    font-size: 15px;
+  }
+
+  .section-service-boxes {
+    width: 95%;
+  }
+
+  .section-offers-columns {
+    width: 95%;
+  }
+
+  .special-offer-column-title {
+    font-size: 1.5em;
+  }
+
+  .section-contact-us-image {
+    width: 100%;
+  }
+
+  .section-contact-us-form {
+    margin-top: 7%;
+    margin-left: -44%;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    background: #ffffff;
+  }
+
+  .contact-us-form-title {
+    font-size: 1.5em;
+  }
+
+  .contact-us-form-paragraph {
+    font-size: 15px;
+  }
+
+  .form-control {
+    width: 92%;
+    font-size: 15px;
+  }
+
+  #contact_email {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  #contact_subject {
+    border: none;
+  }
+
+  .form-control:focus {
+    font-size: 16px;
+  }
+
+  .form-btn {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header-menu {
+    padding-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .logo-link {
+    padding: 0;
+  }
+
+  .header-menu-list {
+    padding: 0;
+  }
+
+  .header-menu-list__item:last-child {
+    padding-right: 10px;
+  }
+
+  .header-menu-item__link {
+    font-size: 12px;
+  }
+
+  .section-header {
+    text-align: center;
+  }
+
+  .section-header-icons-box {
+    justify-content: center;
+  }
+
+  .section-about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-service-boxes {
+    grid-template-columns: auto;
+  }
+
+  .section-offers-columns {
+    grid-template-columns: auto;
+  }
+
+  .offer-column-center {
+    margin: 3% 0;
+    padding-top: 9%;
+    height: 75vh;
+  }
+
+  .section-contact-us-content {
+    flex-direction: column;
+  }
+
+  .section-contact-us-form {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2% 0 2% 0;
+  }
+
+  .section-contact-us-form {
+    width: 90%;
+  }
+
+  #contact_subject {
+    border-bottom: 1px solid #e5e5e5;
+  }
+}
